@@ -418,7 +418,6 @@ def process_docstring(app, what, name, obj, options, lines):
         obj = obj.fget
 
     if callable(obj):
-
         if inspect.isclass(obj):
             obj = getattr(obj, '__init__')
 
